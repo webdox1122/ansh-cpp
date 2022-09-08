@@ -2,11 +2,12 @@
 
 using namespace std;
 
-int main() {
-    int n = 376;
-    int rem;
+// function definition
+void checkArm(int n) {
     int d = 0;
     int temp = n;
+    int rem;
+
     while(n > 0) {
         rem = n % 10;
         d = d + (rem * rem * rem);
@@ -14,11 +15,21 @@ int main() {
     }  
 
     if (temp == d) {
-        cout<<"Armstrong number";
+        cout<<temp<<" is an Armstrong number"<<endl;
     }
     else {
-        cout<<"Not an armstrong number";
+        cout<<temp<<" is Not an armstrong number"<<endl;
     }
 
+}
+
+int main() {
+
+
+   
+    checkArm(370);   // function call
+    checkArm(371);   // function call
+    checkArm(372);   // function call
+    checkArm(373);   // function call
     return 0;
 }
