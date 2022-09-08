@@ -1,4 +1,12 @@
-int temp = n;
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    int n = 376;
+    int rem;
+    int d = 0;
+    int temp = n;
     while(n > 0) {
         rem = n % 10;
         d = d + (rem * rem * rem);
@@ -11,3 +19,6 @@ int temp = n;
     else {
         cout<<"Not an armstrong number";
     }
+
+    return 0;
+}
