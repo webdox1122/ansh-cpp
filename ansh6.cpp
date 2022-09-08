@@ -2,13 +2,13 @@
 #include<fstream>
 
 using namespace std;
-
 int main(){
-    string a;
+    string line;
     ifstream infile;
     infile.open("my data.txt");
-    while(getline(infile,a))
-{
-    cout<<a;
-}
+    while(getline(infile,line));
+    {
+        cout<<line;
+    }
+    return 0;
 }
