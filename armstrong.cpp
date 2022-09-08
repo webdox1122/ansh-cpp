@@ -13,20 +13,15 @@ void checkArm(int n) {
         d = d + (rem * rem * rem);
         n = n / 10;
     }  
-
     if (temp == d) {
         cout<<temp<<" is an Armstrong number"<<endl;
     }
- 
 
 }
 
 int main() {
-
     for (int i=0; i < 500; i++) {
         checkArm(i);
     }
-   
-  
     return 0;
 }
