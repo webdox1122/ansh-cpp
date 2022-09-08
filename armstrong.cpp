@@ -17,19 +17,16 @@ void checkArm(int n) {
     if (temp == d) {
         cout<<temp<<" is an Armstrong number"<<endl;
     }
-    else {
-        cout<<temp<<" is Not an armstrong number"<<endl;
-    }
+ 
 
 }
 
 int main() {
 
-
+    for (int i=0; i < 500; i++) {
+        checkArm(i);
+    }
    
-    checkArm(370);   // function call
-    checkArm(371);   // function call
-    checkArm(372);   // function call
-    checkArm(373);   // function call
+  
     return 0;
 }
